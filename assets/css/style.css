@@ -1,27 +1,76 @@
-a:link {
-  color: goldenrod; }
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto/roboto.woff") format("woff");
+  font-display: swap; }
+@font-face {
+  font-family: 'opensans';
+  src: url("../fonts/opensans/opensans_bold_macroman/OpenSans-Bold-webfont.woff") format("woff");
+  font-display: swap; }
+@font-face {
+  font-family: 'Playfair regular';
+  src: url("../fonts/playfaire/PlayfairDisplay-Regular.ttf") format("ttf");
+  font-display: swap; }
+@font-face {
+  font-family: 'Playfair Display';
+  src: url("../fonts/playfaire/PlayfairDisplay-BoldItalic.ttf") format("ttf");
+  font-display: swap; }
+* {
+  box-sizing: border-box; }
 
 a {
-  color: goldenrod; }
+  color: #daa520; }
   a:hover {
-    color: red; }
-  a:visited {
-    color: purple; }
+    color: #373737; }
   a:active {
-    color: purple; }
+    color: #373737; }
+
+ul {
+  list-style: none; }
 
 figure {
   margin: 0; }
 
+header {
+  text-align: center; }
+  header img {
+    filter: grayscale(100); }
+
 nav {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  background-color: white;
+  margin: 0; }
   nav ul {
-    list-style-type: none;
     display: flex;
     justify-content: space-around;
-    gap: 1em; }
+    gap: .1em; }
     nav ul li {
-      padding: 10px; }
+      flex: 1 0 auto;
+      background-color: #daa520;
+      padding: 15px 10px;
+      font-family: 'Roboto'; }
+      nav ul li:hover {
+        background-color: white;
+        color: #daa520; }
+      nav ul li a {
+        color: white;
+        text-decoration: none; }
+
+h1 {
+  font-size: 5vh;
+  font-family: 'Playfair regular';
+  color: #daa520; }
+
+h2 {
+  font-family: 'Roboto';
+  color: #373737; }
+
+/** section a propos **/
+main section:first-child {
+  display: flex; }
+
+.container {
+  display: flex;
+  justify-content: space-around; }
 
 /*# sourceMappingURL=style.css.map */
