@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="32x32" href="/cv/favicon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/cv/favicon.png">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    <title>CV 2022</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-16x16.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>CV 2022</title>
+    </head>
 <body>
     <header>
         <figure>
@@ -21,22 +22,34 @@
             alt="CV Magdalena Kroliczek">
         </figure>
 
-        <nav>
+        <nav class="desktop hide">
             <ul>
                 <li><a href="#">A propos</a></li>
-                <li><a href="#">Compétance</a></li>
-                <li><a href="#">Expériance</a></li>
+                <li><a href="#">Compétences</a></li>
+                <li><a href="#">Expérience</a></li>
                 <li><a href="#">Formation</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+        <nav class="mobile">
+            <span class="material-icons-outlined">menu</span>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="#apropos">A propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#exp">Expérience professionnelle</a></li>
+                <li><a href="#learn">Formation</a></li>
+                <li><a href="contact.html">Contacter moi</a></li>
+            </ul>
+        </div>
         <h1>Developpeur front-end</h1>
     </header>
   
     <main>
         <section>
             <h2>A propos</h2>
-        <div class="contanaire">
+        <div class="container">
             <div class="apropos__foto">
                 <figure><img src="https://via.placeholder.com/150?text=Photo Profile" alt="Photo profil"></figure>
             </div>
@@ -108,25 +121,25 @@
                 <p>Repas</p>
             </article>
         </section>
-        <section><h2>Formation</h2>
+        <section><h2> Formation</h2>
         <article>
-            <h3>Concepteur Développeur FRONT END</h3>
-            <h4>25/10/2021 - 14/01/2022</h4>
-            <h5>Boulogne</h5>
-            <p>Projet: Conception/Réalisation d’un site en mode agile.
+            <h3> Concepteur Développeur FRONT END</h3>
+            <h4> 25/10/2021 - 14/01/2022</h4>
+            <h5> Boulogne</h5>
+            <p> Projet: Conception/Réalisation d’un site en mode agile.
                 Travailler en mode agile avec Scrum</p>
         </article>
         <article>
-            <h3>WebForce3</h3>
-            <h4>2020-2021</h4>
-            <h5>Paris</h5>
-            <p>Developpeuse Web et Web mobile sur Social Builder-Women in Digital.</p>
+            <h3> WebForce3</h3>
+            <h4> 2020-2021</h4>
+            <h5> Paris</h5>
+            <p> Developpeuse Web et Web mobile sur Social Builder-Women in Digital.</p>
         </article>
         <article>
-            <h3>Wyzsza Szkola Filozoficzno Pedagogiczna „Ignatianum"</h3>
-            <h4>D'octobre 2010 à mai 2012</h4>
-            <h5>Cracovie</h5>
-            <p>éducation préscolaire et réinsertion social</p>
+            <h3> Wyzsza Szkola Filozoficzno Pedagogiczna „Ignatianum"</h3>
+            <h4> D'octobre 2010 à mai 2012</h4>
+            <h5> Cracovie</h5>
+            <p> Éducation préscolaire et réinsertion social</p>
         </article>
         </section>
     </main>

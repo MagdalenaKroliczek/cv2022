@@ -35,6 +35,14 @@ header {
   header img {
     filter: grayscale(100); }
 
+.desktop {
+  display: none; }
+
+.mobile-menu {
+  display: none; }
+  .mobile-menu:hover {
+    display: block; }
+
 nav {
   display: flex;
   justify-content: center;
@@ -72,5 +80,64 @@ main section:first-child {
 .container {
   display: flex;
   justify-content: space-around; }
+
+.description {
+  line-height: 2em; }
+  .description li:nth-child(1) {
+    font-size: 1.5em; }
+  .description li:nth-child(2) {
+    position: relative; }
+    .description li:nth-child(2)::before {
+      font-size: 1.2em;
+      position: absolute;
+      top: 0px;
+      left: -20px;
+      font-family: 'Material Icons';
+      /** uzywamy zawsze do ikon   **/
+      content: "\f187";
+      /**szukamy w google fonts- Code point + \**/ }
+  .description li:nth-child(3) {
+    position: relative; }
+    .description li:nth-child(3)::before {
+      font-size: 1.2em;
+      position: absolute;
+      top: 0px;
+      left: -20px;
+      font-family: 'Material Icons';
+      content: "\e62b"; }
+
+section:nth-of-type(even) {
+  background-color: #373737;
+  color: white;
+  padding: 1em; }
+  section:nth-of-type(even) h2 {
+    color: #daa520; }
+
+section:nth-of-type(odd) h2 {
+  padding-left: 0.5em; }
+
+article {
+  padding: 0 1em; }
+
+.social .fab {
+  background-position: center center;
+  height: 300px;
+  margin-top: 50px;
+  margin-left: 100px;
+  padding: 10px;
+  justify-content: center; }
+
+@media screen and (min-width: 480px) and (max-width: 779px) {
+  h1 {
+    font-size: 10vh; }
+
+  .desktop {
+    display: block; }
+
+  .mobile {
+    display: none; } }
+@media screen and (min-width: 780px) {
+  h1 {
+    color: #373737; } }
 
 /*# sourceMappingURL=style.css.map */

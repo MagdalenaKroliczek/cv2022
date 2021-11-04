@@ -19,6 +19,16 @@ header{
     }
 }
 
+.desktop{
+    display: none;
+}
+.mobile-menu {
+    display: none;
+    &:hover{
+        display: block;
+    }
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -64,4 +74,61 @@ main section:first-child{
 .container{
     display: flex;
     justify-content: space-around;
+}
+
+.description {
+    line-height: 2em;
+    li{
+        &:nth-child(1){
+            font-size: 1.5em;
+        }
+        &:nth-child(2){
+            position: relative;
+            &::before{
+                font-size: 1.2em;
+                position: absolute;
+                top: 0px;
+                left: -20px;
+                font-family: 'Material Icons'; /** uzywamy zawsze do ikon   **/
+                content: "\f187";    /**szukamy w google fonts- Code point + \**/
+            }
+        }
+        &:nth-child(3){
+            position: relative;
+            &::before{
+                font-size: 1.2em;
+                position: absolute;
+                top: 0px;
+                left: -20px;
+                font-family: 'Material Icons';
+                content: "\e62b";
+            }
+        }
+    }
+}
+
+section:nth-of-type(even){
+    background-color: rgba($color: #373737, $alpha: 1.0);
+    color: $white;
+    padding: 1em;
+    h2 {
+        color: $primary_color;
+    } 
+}
+section:nth-of-type(odd){
+    h2{
+        padding-left: 0.5em;
+    }
+}
+article{
+    padding: 0 1em;
+}
+
+.social .fab{
+    background-position: center center;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 100px;
+    padding: 10px;
+    justify-content: center;
 }
