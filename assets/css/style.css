@@ -119,25 +119,49 @@ section:nth-of-type(odd) h2 {
 article {
   padding: 0 1em; }
 
-.social .fab {
-  background-position: center center;
-  height: 300px;
-  margin-top: 50px;
-  margin-left: 100px;
-  padding: 10px;
-  justify-content: center; }
+/*footer  */
+footer {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+  footer .footer__social {
+    display: flex;
+    gap: 3em; }
+    footer .footer__social .footer__social-item {
+      font-size: 48px;
+      color: rgba(59, 89, 152, 0.5);
+      cursor: pointer;
+      transition-duration: 2s; }
+      footer .footer__social .footer__social-item:hover {
+        color: #3B5998; }
 
 @media screen and (min-width: 480px) and (max-width: 779px) {
   h1 {
-    font-size: 10vh; }
+    font-size: 3vh; }
+
+  .desktop {
+    display: block; }
+
+  .mobile {
+    display: none; }
+
+  .formation__container {
+    display: flex;
+    flex-wrap: wrap; }
+    .formation__container article {
+      flex-basis: 45%; } }
+@media screen and (min-width: 780px) {
+  h1 {
+    color: #373737; }
 
   .desktop {
     display: block; }
 
   .mobile {
     display: none; } }
-@media screen and (min-width: 780px) {
-  h1 {
-    color: #373737; } }
+.formation__container {
+  display: flex; }
 
 /*# sourceMappingURL=style.css.map */
